@@ -1,0 +1,344 @@
+
+/*header section*/
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 20px;
+} 
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #C02A6B;
+  color: white;
+}
+/*for making responsive  navber*/
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.search-input{
+	border:0;
+	color: #a2a2a2;
+	background-image:none;
+	-webkit-border-radius: 3px;
+	padding:10px;
+	width:300px;
+	box-sizing:border-box;
+	height: 40px;
+	background:#282828;
+	margin-top:8px;
+}
+/*footer section*/
+.foot{
+	background-color:black;
+	color:#C02A6B;
+}
+
+/*carousel*/
+.carouselButton{
+	width: 240px;
+	height: 60px;
+	background:#C02A6B;
+	color: #fff;
+	font-size:30px;
+	font-weight:bold;
+    border-radius: 4px;
+	border:0;
+	border:0;
+	
+}
+.carousel-caption button:hover{
+	background: #2a2a2a;
+	cursor: pointer;
+}
+
+.carousel-indicators > li {
+    width: 10px;
+	height: 10px;
+	border-radius: 100%;
+
+}
+.carousel-caption {
+	
+	font-weight:bold;
+	text-align: left;
+	left: 10%;
+    line-height: 1;
+    top: 80%;
+    margin-top: -100px;
+}
+.carousel-caption h1{
+	font-size: 60px;
+	font-weight:bold;
+	color: #fff;
+	margin-top: 10px;
+}
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+/*
+.carousel-control .fa-chevron-left, .carousel-control .icon-prev {
+
+margin-right:0px;
+margin-bottom:80px;
+}
+.carousel-control .fa-chevron-right, .carousel-control .icon-next {
+
+margin-left:0px;
+margin-bottom:80px;
+}
+.carousel-controls {
+display: -ms-flexbox;
+display: flex;
+-ms-flex-pack: justify;
+justify-content: space-between;
+position: absolute;
+width: 100%;
+top: 43%;
+}
+
+*/
+html,body{
+	overflow-x :hidden;
+}
+
+.popular{
+	text-align: center;
+	padding: 10px;
+	color: #CC0066;
+	margin-left: 550px;
+	margin-top: 20px;
+	font-size: 30px;
+}
+.movieName{
+	color:white;
+	font-weight: bold;
+	width: 210px;
+}
+.movieYear{
+	color:#CC0066;
+	font-weight: normal;
+}
+.content{
+	transition: .4s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.rating{
+	transition: .4s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.genre{
+	transition: .4s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.gridButton{
+	width: 140px;
+	height: 40px;
+	background:#C02A6B;
+	color: #fff;
+	font-size:15px;
+	font-weight:bold;
+	transition: .4s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+	border:0;
+	border:0;
+}
+
+browse-movies.img-responsive {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .3s ease;
+  backface-visibility: hidden;
+  border: 1px solid white;
+}
+
+.browse-movies:hover .img-responsive {
+  opacity: 0.3;
+   border: 1px solid white;
+}
+
+.browse-movies:hover .content {
+  opacity: 1;
+  margin-left: 150px;
+  text-align: center;
+  top: 30%; 
+
+}
+
+.browse-movies:hover .rating {
+  opacity: 1;
+  margin-left: 100px;
+  text-align: center;
+  top: 30%; 
+  color:white;
+
+}
+.browse-movies:hover .genre{
+  opacity: 1;
+  margin-left: 100px;
+  margin-bottom: 120px;
+  text-align: center;
+  top: 40%;
+  color:white;
+}
+.browse-movies:hover .gridButton {
+  opacity: 1;
+  margin-left: -100px;
+  text-align: center;
+  top: 30%; 
+  margin-top: 120px;
+
+}
+
+
+/*to adjust the pictures to different screens*/
+@media (max-width: 575px) { 
+	.carouselImage
+	{
+		width:100%;
+		height:30%;
+	}
+	.carousel-caption h1 {
+  		font-size: 28px;
+  	}
+	.carousel-caption button {
+		 width: 130px;
+		 height: 30px;
+		 background: #C02A6B;
+		 color: #fff;
+		 font-size: 15px;
+		 font-weight:bold;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+	.carouselImage
+	{
+		width:100%;
+		height:50%;
+	}
+	.carousel-caption h1 {
+  		font-size: 30px;
+  	}
+	.carousel-caption button {
+		 width: 140px;
+		 height: 45px;
+		 background: #C02A6B;
+		 color: #fff;
+		 font-size: 20px;
+		 font-weight:bold;
+	}
+}
+@media (min-width: 767px) and (max-width: 992px) { 
+	.carouselImage
+	{
+		width:100%;
+		height:70%;
+	}
+	.carousel-caption h1 {
+  		font-size: 30px;
+  	}
+	.carousel-caption button {
+		 width: 180px;
+		 height: 50px;
+		 background: #C02A6B;
+		 color: #fff;
+		 font-size: 22px;
+		 font-weight:bold;
+	}
+}
+@media (min-width: 992px) and (max-width: 1200px) { 
+	.carouselImage
+	{
+		width:100%;
+		height:80%;
+	}	
+	.carousel-caption h1 {
+  		font-size: 40px;
+  	}
+	.carousel-caption button {
+		 width: 190px;
+		 height: 50px;
+		 background: #C02A6B;
+		 color: #fff;
+		 font-size: 25px;
+		 font-weight:bold;
+	}
+}
+@media (min-width: 1201px) { 
+	.carouselImage
+	{
+		width:100%;
+		height:100%;
+		padding-right:0px;
+	}
+}
